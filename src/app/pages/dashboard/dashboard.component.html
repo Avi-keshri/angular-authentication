@@ -1,0 +1,16 @@
+<div class="container" style="margin-top:20px;">
+    <div class="row">
+        <div class="col-xs-12 col-md-4" style="margin-top:10px;" *ngFor="let user of loadUsers">
+            <div class="card" style="width:360px">
+                <img class="card-img-top" src="../../../assets/images/img_avatar.png" alt="Card image"
+                    style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">{{user.firstName | uppercase}}</h4>
+                    <p class="card-text">{{user.emailId }}</p>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
